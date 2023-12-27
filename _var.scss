@@ -1,0 +1,37 @@
+$bg-color: #f3f3f3;
+$icon-color: #172935;
+$purple-color: #7431e7;
+$hover-color: #e7e8ec;
+
+body {
+  background-color: $bg-color;
+  font-size: 1rem;
+  color: #1c1c1c;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #545454;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+._container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+._wrapper {
+  padding: 0 20px;
+}
+
+i {
+  color: $icon-color;
+  font-size: 20px;
+}

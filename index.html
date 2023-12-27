@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/header/logo.png" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Facebook-clone | ITSCHOOL</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container _wrapper">
+        <nav class="header__nav nav">
+          <div class="nav__item">
+            <div class="nav__logo">
+              <a href="#" class="nav__logo-link">
+                <img
+                  width="53"
+                  height="53"
+                  src="/images/header/logo.png"
+                  alt="logo"
+                />
+                <h1 class="header__logo-title">Flow.</h1>
+              </a>
+            </div>
+            <div class="nav__search">
+              <i class="fa-solid fa-magnifying-glass nav__search-button"></i>
+              <input
+                class="nav__search-in"
+                type="text"
+                placeholder="Cauta pe Flow"
+                id="seach"
+              />
+            </div>
+          </div>
+          <div class="nav__item branch">
+            <ul class="branch__list">
+              <li class="branch__item branch__item-home active">
+                <a href="#" class="branch__link"
+                  ><i class="fa-solid fa-house-chimney-window"></i
+                ></a>
+              </li>
+              <li class="branch__item branch__item-live">
+                <a href="#" class="branch__link"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li class="branch__item branch__item-store">
+                <a href="#" class="branch__link"
+                  ><i class="fa-solid fa-store"></i
+                ></a>
+              </li>
+              <li class="branch__item branch__item-users">
+                <a href="#" class="branch__link"
+                  ><i class="fa-solid fa-users"></i
+                ></a>
+              </li>
+              <li class="branch__item branch__item-games">
+                <a href="#" class="branch__link"
+                  ><i class="fa-solid fa-gamepad"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__item user">
+            <ul class="user__list">
+              <li class="user__item">
+                <button class="user__btn user__btn-menu">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </button>
+              </li>
+              <li class="user__item">
+                <button class="user__btn">
+                  <i class="fa-solid fa-comment"></i>
+                </button>
+              </li>
+              <li class="user__item">
+                <button class="user__btn">
+                  <i class="fa-solid fa-bell"></i>
+                </button>
+              </li>
+              <li class="user__item">
+                <button class="user__btn">
+                  <img src="/images/header/ilon_musk.png" alt="btn-img" />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main _wrapper">
+      <aside class="main__left-aside left-aside">
+        <div class="left-aside__wrapper">
+          <ul class="left-aside__list">
+            <li class="left-aside__item">
+              <a href="#" class="left-aside__link"
+                ><i class="fa-solid fa-user"></i><span>Profil</span></a
+              >
+            </li>
+            <li class="left-aside__item">
+              <a href="#" class="left-aside__link"
+                ><i class="fa-solid fa-user-group"></i><span>Prieteni</span></a
+              >
+            </li>
+            <li class="left-aside__item">
+              <a href="#" class="left-aside__link"
+                ><i class="fa-solid fa-calendar-days"></i
+                ><span>Evenimente</span></a
+              >
+            </li>
+            <li class="left-aside__item">
+              <a href="#" class="left-aside__link"
+                ><i class="fa-solid fa-film"></i><span>Video</span></a
+              >
+            </li>
+            <li class="left-aside__item">
+              <a href="#" class="left-aside__link"
+                ><i class="fa-solid fa-spinner"></i><span>Fluxuri</span></a
+              >
+            </li>
+            <li class="left-aside__item">
+              <a href="#" class="left-aside__link"
+                ><i class="fa-regular fa-floppy-disk"></i
+                ><span>Salvate</span></a
+              >
+            </li>
+          </ul>
+          <button class="left-aside__more-tab">
+            <i class="fa-solid fa-arrow-down"></i>Vezi mai mult
+          </button>
+        </div>
+      </aside>
+      <div class="main__sections">
+        <section class="main__content">
+          <div class="main__wrapper">
+            <div class="main__stores stores">
+              <div class="stores__swiper">
+                <!-- Slider main container -->
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-image-bg"
+                        src="/images/main__swiper/foto-swiper_1.jpg"
+                        alt="image-hero"
+                        width="100"
+                      />
+                      <img
+                        class="swiper-image-hero"
+                        src="/images/main__swiper/user_1.png"
+                        alt="user_photo"
+                      />
+                      <span class="swiper-title">Mikel Jora</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-image-bg"
+                        src="/images/main__swiper/foto-swiper_2.jpg"
+                        alt="image-hero"
+                        width="100"
+                      />
+                      <img
+                        width="50"
+                        class="swiper-image-hero"
+                        src="/images/main__swiper/user_2.webp"
+                        alt="user_photo"
+                      />
+                      <span class="swiper-title">Mikel Jora</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-image-bg"
+                        src="/images/main__swiper/foto-swiper_3.jpg"
+                        alt="image-hero"
+                        width="100"
+                      />
+                      <img
+                        width="50"
+                        class="swiper-image-hero"
+                        src="/images/main__swiper/user_1.png"
+                        alt="user_photo"
+                      />
+                      <span class="swiper-title">Mikel Jora</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-image-bg"
+                        src="/images/main__swiper/foto-swipper_4.webp"
+                        alt="image-hero"
+                        width="100"
+                      />
+                      <img
+                        width="50"
+                        class="swiper-image-hero"
+                        src="/images/main__swiper/user_2.webp"
+                        alt="user_photo"
+                      />
+                      <span class="swiper-title">Mikel Jora</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-image-bg"
+                        src="/images/main__swiper/foto-swiper_1.jpg"
+                        alt="image-hero"
+                        width="100"
+                      />
+                      <img
+                        width="50"
+                        class="swiper-image-hero"
+                        src="/images/main__swiper/user_1.png"
+                        alt="user_photo"
+                      />
+                      <span class="swiper-title">Mikel Jora</span>
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper-image-bg"
+                        src="/images/main__swiper/foto-swiper_2.jpg"
+                        alt="image-hero"
+                        width="100"
+                      />
+                      <img
+                        width="50"
+                        class="swiper-image-hero"
+                        src="/images/main__swiper/user_2.webp"
+                        alt="user_photo"
+                      />
+                      <span class="swiper-title">Mikel Jora</span>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__post post">
+          <div class="post__wrapper">
+            <div class="post__input">
+              <img
+                class="post__input-img"
+                width="50"
+                height="50"
+                src="/images/header/ilon_musk.png"
+                alt="user icon"
+              />
+              <input
+                class="post__input-text"
+                type="text"
+                placeholder="La ce te gandesti, Ilon Musk?"
+              />
+            </div>
+            <hr />
+            <div class="post__add-elements">
+              <div class="post__element post__element-live">
+                <i class="fa-solid fa-video"></i><span>Clip in direct</span>
+              </div>
+              <div class="post__element post__element-content">
+                <i class="fa-regular fa-images"></i><span></span>Foto/video
+              </div>
+              <div class="post__element post__element-mood">
+                <i class="fa-regular fa-face-smile"></i><span>Stare</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__feed feed">
+          <div class="feed__wrapper">
+            <ul class="feed__list">
+              <li class="feed__item feed__item-post">
+                <div class="feed__user-info user-info">
+                  <img
+                    class="user-info__img"
+                    src="/images/posts/post_user_1.jpg"
+                    width="40"
+                    height="40"
+                    alt="user photo"
+                  />
+                  <div class="user-info__container">
+                    <span class="user-info__name">Emma Green</span>
+                    <span class="user-info__post-time">4 minutes ago</span>
+                  </div>
+                </div>
+                <div class="feed__user-post user-post">
+                  <article class="user-post__article">
+                    <h3 class="user-post__main-title">
+                      Viitorul Umanității: Colonizarea Planetei Marte
+                    </h3>
+                    <p class="user-post__text">
+                      Salut, exploratori ai viitorului! 🚀 Într-o epocă în care
+                      tehnologia ne deschide noi orizonturi, oamenii își
+                      îndreaptă privirile către stelele îndepărtate și visul
+                      colonizării Planetei Marte devine tot mai real. Așadar, să
+                      vorbim despre aventura umanității către Planeta Roșie!
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🌌Destinația Finală: Marte 🚀
+                    </h4>
+
+                    <p class="user-post__text">
+                      Cu resursele Pământului limitate și o populație în
+                      continuă creștere, Marte devine un candidat serios pentru
+                      colonizare. Oamenii de știință și inginerii lucrează
+                      împreună pentru a transforma acest vis în realitate.
+                      SpaceX, condusă de Elon Musk, a făcut pași importanți în
+                      această direcție cu proiectul său ambițios numit
+                      "Starship".
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🚀 Starship: Navă Spațială a Viitorului 🌠
+                    </h4>
+
+                    <p class="user-post__text">
+                      Starship este concepută să transporte oameni și
+                      echipamente pe distanțe mari, inclusiv către Marte. Cu
+                      capacități impresionante și tehnologii revoluționare,
+                      Starship ar putea fi cheia succesului pentru a face Marte
+                      o a doua casă pentru oameni.
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🛰️ Infrastructură pe Marte 🏗️
+                    </h4>
+
+                    <p class="user-post__text">
+                      Colonizarea nu înseamnă doar a ajunge acolo, ci și a crea
+                      o infrastructură sustenabilă. Asta include construirea de
+                      baze, sere pentru producția de hrană și sisteme avansate
+                      de reciclare a resurselor. Oamenii de știință explorează
+                      modalități de a utiliza resursele locale pentru a reduce
+                      dependența de resursele Pământului.
+                    </p>
+
+                    <h4 class="user-post__title">👩‍🚀 Oameni pe Marte 👨‍🚀</h4>
+
+                    <p class="user-post__text">
+                      Când va deveni realitate colonizarea, oamenii vor trebui
+                      să se adapteze la condițiile unice de pe Marte. Aceasta
+                      include învățarea să trăiască în condiții de gravitație
+                      redusă, gestionarea resurselor limitate și dezvoltarea
+                      unor tehnologii pentru a face față mediului ostil.
+                    </p>
+                    <p class="user-post__text">
+                      🚀 #ExplorareSpatiala #ColonizareaMarte
+                      #ViitorulUmanitatii 🌌
+                    </p>
+                  </article>
+                  <img
+                    class="user-post__img"
+                    src="/images/posts/post__1.jpg"
+                    alt="post photo"
+                    width="400"
+                    height="400"
+                  />
+                </div>
+                <div class="feed__user-react user-react">
+                  <div class="user-react__item user-react__item-likes">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>52 Likes</span>
+                  </div>
+                  <div class="user-react__item user-react__item-comment">
+                    <span>26 Comments</span>
+                  </div>
+                </div>
+                <div class="feed__user-action user-action">
+                  <button class="user-action__item user-action__item-like">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    Like
+                  </button>
+                  <button class="user-action__item user-action__item-comment">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                  </button>
+                  <button class="user-action__item user-action__item-share">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    Share
+                  </button>
+                </div>
+              </li>
+
+              <li class="feed__item feed__item-post">
+                <div class="feed__user-info user-info">
+                  <img
+                    class="user-info__img"
+                    src="/images/posts/post_user_1.jpg"
+                    width="40"
+                    height="40"
+                    alt="user photo"
+                  />
+                  <div class="user-info__container">
+                    <span class="user-info__name">Emma Green</span>
+                    <span class="user-info__post-time">4 minutes ago</span>
+                  </div>
+                </div>
+                <div class="feed__user-post user-post">
+                  <article class="user-post__article">
+                    <h3 class="user-post__main-title">
+                      Viitorul Umanității: Colonizarea Planetei Marte
+                    </h3>
+                    <p class="user-post__text">
+                      Salut, exploratori ai viitorului! 🚀 Într-o epocă în care
+                      tehnologia ne deschide noi orizonturi, oamenii își
+                      îndreaptă privirile către stelele îndepărtate și visul
+                      colonizării Planetei Marte devine tot mai real. Așadar, să
+                      vorbim despre aventura umanității către Planeta Roșie!
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🌌Destinația Finală: Marte 🚀
+                    </h4>
+
+                    <p class="user-post__text">
+                      Cu resursele Pământului limitate și o populație în
+                      continuă creștere, Marte devine un candidat serios pentru
+                      colonizare. Oamenii de știință și inginerii lucrează
+                      împreună pentru a transforma acest vis în realitate.
+                      SpaceX, condusă de Elon Musk, a făcut pași importanți în
+                      această direcție cu proiectul său ambițios numit
+                      "Starship".
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🚀 Starship: Navă Spațială a Viitorului 🌠
+                    </h4>
+
+                    <p class="user-post__text">
+                      Starship este concepută să transporte oameni și
+                      echipamente pe distanțe mari, inclusiv către Marte. Cu
+                      capacități impresionante și tehnologii revoluționare,
+                      Starship ar putea fi cheia succesului pentru a face Marte
+                      o a doua casă pentru oameni.
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🛰️ Infrastructură pe Marte 🏗️
+                    </h4>
+
+                    <p class="user-post__text">
+                      Colonizarea nu înseamnă doar a ajunge acolo, ci și a crea
+                      o infrastructură sustenabilă. Asta include construirea de
+                      baze, sere pentru producția de hrană și sisteme avansate
+                      de reciclare a resurselor. Oamenii de știință explorează
+                      modalități de a utiliza resursele locale pentru a reduce
+                      dependența de resursele Pământului.
+                    </p>
+
+                    <h4 class="user-post__title">👩‍🚀 Oameni pe Marte 👨‍🚀</h4>
+
+                    <p class="user-post__text">
+                      Când va deveni realitate colonizarea, oamenii vor trebui
+                      să se adapteze la condițiile unice de pe Marte. Aceasta
+                      include învățarea să trăiască în condiții de gravitație
+                      redusă, gestionarea resurselor limitate și dezvoltarea
+                      unor tehnologii pentru a face față mediului ostil.
+                    </p>
+                    <p class="user-post__text">
+                      🚀 #ExplorareSpatiala #ColonizareaMarte
+                      #ViitorulUmanitatii 🌌
+                    </p>
+                  </article>
+                  <img
+                    class="user-post__img"
+                    src="/images/posts/post__1.jpg"
+                    alt="post photo"
+                    width="400"
+                    height="400"
+                  />
+                </div>
+                <div class="feed__user-react user-react">
+                  <div class="user-react__item user-react__item-likes">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>52 Likes</span>
+                  </div>
+                  <div class="user-react__item user-react__item-comment">
+                    <span>26 Comments</span>
+                  </div>
+                </div>
+                <div class="feed__user-action user-action">
+                  <button class="user-action__item user-action__item-like">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    Like
+                  </button>
+                  <button class="user-action__item user-action__item-comment">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                  </button>
+                  <button class="user-action__item user-action__item-share">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    Share
+                  </button>
+                </div>
+              </li>
+              <li class="feed__item feed__item-post">
+                <div class="feed__user-info user-info">
+                  <img
+                    class="user-info__img"
+                    src="/images/posts/post_user_1.jpg"
+                    width="40"
+                    height="40"
+                    alt="user photo"
+                  />
+                  <div class="user-info__container">
+                    <span class="user-info__name">Emma Green</span>
+                    <span class="user-info__post-time">4 minutes ago</span>
+                  </div>
+                </div>
+                <div class="feed__user-post user-post">
+                  <article class="user-post__article">
+                    <h3 class="user-post__main-title">
+                      Viitorul Umanității: Colonizarea Planetei Marte
+                    </h3>
+                    <p class="user-post__text">
+                      Salut, exploratori ai viitorului! 🚀 Într-o epocă în care
+                      tehnologia ne deschide noi orizonturi, oamenii își
+                      îndreaptă privirile către stelele îndepărtate și visul
+                      colonizării Planetei Marte devine tot mai real. Așadar, să
+                      vorbim despre aventura umanității către Planeta Roșie!
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🌌Destinația Finală: Marte 🚀
+                    </h4>
+
+                    <p class="user-post__text">
+                      Cu resursele Pământului limitate și o populație în
+                      continuă creștere, Marte devine un candidat serios pentru
+                      colonizare. Oamenii de știință și inginerii lucrează
+                      împreună pentru a transforma acest vis în realitate.
+                      SpaceX, condusă de Elon Musk, a făcut pași importanți în
+                      această direcție cu proiectul său ambițios numit
+                      "Starship".
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🚀 Starship: Navă Spațială a Viitorului 🌠
+                    </h4>
+
+                    <p class="user-post__text">
+                      Starship este concepută să transporte oameni și
+                      echipamente pe distanțe mari, inclusiv către Marte. Cu
+                      capacități impresionante și tehnologii revoluționare,
+                      Starship ar putea fi cheia succesului pentru a face Marte
+                      o a doua casă pentru oameni.
+                    </p>
+
+                    <h4 class="user-post__title">
+                      🛰️ Infrastructură pe Marte 🏗️
+                    </h4>
+
+                    <p class="user-post__text">
+                      Colonizarea nu înseamnă doar a ajunge acolo, ci și a crea
+                      o infrastructură sustenabilă. Asta include construirea de
+                      baze, sere pentru producția de hrană și sisteme avansate
+                      de reciclare a resurselor. Oamenii de știință explorează
+                      modalități de a utiliza resursele locale pentru a reduce
+                      dependența de resursele Pământului.
+                    </p>
+
+                    <h4 class="user-post__title">👩‍🚀 Oameni pe Marte 👨‍🚀</h4>
+
+                    <p class="user-post__text">
+                      Când va deveni realitate colonizarea, oamenii vor trebui
+                      să se adapteze la condițiile unice de pe Marte. Aceasta
+                      include învățarea să trăiască în condiții de gravitație
+                      redusă, gestionarea resurselor limitate și dezvoltarea
+                      unor tehnologii pentru a face față mediului ostil.
+                    </p>
+                    <p class="user-post__text">
+                      🚀 #ExplorareSpatiala #ColonizareaMarte
+                      #ViitorulUmanitatii 🌌
+                    </p>
+                  </article>
+                  <img
+                    class="user-post__img"
+                    src="/images/posts/post__1.jpg"
+                    alt="post photo"
+                    width="400"
+                    height="400"
+                  />
+                </div>
+                <div class="feed__user-react user-react">
+                  <div class="user-react__item user-react__item-likes">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>52 Likes</span>
+                  </div>
+                  <div class="user-react__item user-react__item-comment">
+                    <span>26 Comments</span>
+                  </div>
+                </div>
+                <div class="feed__user-action user-action">
+                  <button class="user-action__item user-action__item-like">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    Like
+                  </button>
+                  <button class="user-action__item user-action__item-comment">
+                    <i class="fa-regular fa-comment"></i>
+                    Comment
+                  </button>
+                  <button class="user-action__item user-action__item-share">
+                    <i class="fa-regular fa-share-from-square"></i>
+                    Share
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <aside class="main__right-aside right-aside">
+        <div class="right-aside__wrapper">
+          <div class="right-aside__group group">
+            <h2 class="group__main-title">Comunitati</h2>
+            <ul class="group__list">
+              <li class="group__item">
+                <img
+                  width="40px"
+                  height="40"
+                  class="group__img"
+                  src="/images/right_aside/community.png"
+                  alt="group image"
+                />
+                <a href="#" class="group__link"
+                  ><h3 class="group__name">OpenAI Community</h3></a
+                >
+              </li>
+              <li class="group__item">
+                <img
+                  width="40px"
+                  height="40"
+                  class="group__img"
+                  src="/images/right_aside/community.png"
+                  alt="group image"
+                />
+                <a href="#" class="group__link"
+                  ><h3 class="group__name">
+                    Artificial Intelligence Enthusiasts
+                  </h3></a
+                >
+              </li>
+              <li class="group__item">
+                <img
+                  width="40px"
+                  height="40"
+                  class="group__img"
+                  src="/images/right_aside/community.png"
+                  alt="group image"
+                />
+                <a href="#" class="group__link"
+                  ><h3 class="group__name">
+                    Futuristic Technologies and Innovations
+                  </h3></a
+                >
+              </li>
+              <li class="group__item">
+                <img
+                  width="40px"
+                  height="40"
+                  class="group__img"
+                  src="/images/right_aside/community.png"
+                  alt="group image"
+                />
+                <a href="#" class="group__link"
+                  ><h3 class="group__name">SpaceX Fans and Enthusiasts</h3></a
+                >
+              </li>
+              <li class="group__item">
+                <img
+                  width="40px"
+                  height="40"
+                  class="group__img"
+                  1
+                  src="/images/right_aside/community.png"
+                  alt="group image"
+                />
+                <a href="#" class="group__link"
+                  ><h3 class="group__name">Tesla fans</h3></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="right-aside__friends friends">
+            <h2 class="friends__main-title">Contacte</h2>
+            <ul class="friends__list">
+              <li class="friends__item">
+                <img
+                  width="40px"
+                  height="40"
+                  src="/images/main__swiper/user_1.png"
+                  alt="friend image"
+                  class="friends__img"
+                />
+                <a href="#" class="friends__link"
+                  ><h3 class="friends__name">Alexandru Ion</h3></a
+                >
+              </li>
+              <li class="friends__item">
+                <img
+                  width="40px"
+                  height="40"
+                  src="/images/main__swiper/user_1.png"
+                  alt="friend image"
+                  class="friends__img"
+                />
+                <a href="#" class="friends__link"
+                  ><h3 class="friends__name">Andrei Toderascu</h3></a
+                >
+              </li>
+              <li class="friends__item">
+                <img
+                  width="40px"
+                  height="40"
+                  src="/images/main__swiper/user_1.png"
+                  alt="friend image"
+                  class="friends__img"
+                />
+                <a href="#" class="friends__link"
+                  ><h3 class="friends__name">Frunza Tatiana</h3></a
+                >
+              </li>
+              <li class="friends__item">
+                <img
+                  width="40px"
+                  height="40"
+                  src="/images/main__swiper/user_1.png"
+                  alt="friend image"
+                  class="friends__img"
+                />
+                <a href="#" class="friends__link"
+                  ><h3 class="friends__name">Gheorge Ciobanu</h3></a
+                >
+              </li>
+              <li class="friends__item">
+                <img
+                  width="40px"
+                  height="40"
+                  src="/images/main__swiper/user_1.png"
+                  alt="friend image"
+                  class="friends__img"
+                />
+                <a href="#" class="friends__link"
+                  ><h3 class="friends__name">Cristi Dumitrache</h3></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer"></footer>
+    <script
+      src="https://kit.fontawesome.com/5a30cfae67.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
