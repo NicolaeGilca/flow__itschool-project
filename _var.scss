@@ -3,6 +3,10 @@ $icon-color: #172935;
 $purple-color: #7431e7;
 $hover-color: #e7e8ec;
 
+.disable {
+ display: none;
+}
+
 body {
   background-color: $bg-color;
   font-size: 1rem;

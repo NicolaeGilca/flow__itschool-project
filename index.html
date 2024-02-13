@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/images/header/logo.png" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +22,9 @@
     <header class="header">
       <div class="header__container _wrapper">
         <nav class="header__nav nav">
-          <div class="nav__item">
-            <div class="nav__logo">
+          <div class="nav__item search">
+            <div class="nav__wrapper">
+              <div class="nav__logo">
               <a href="#" class="nav__logo-link">
                 <img
                   width="53"
@@ -42,7 +43,8 @@
                 placeholder="Cauta pe Flow"
                 id="seach"
               />
-            </div>
+            </div></div>
+            
           </div>
           <div class="nav__item branch">
             <ul class="branch__list">
@@ -101,8 +103,8 @@
       </div>
     </header>
 
-    <main class="main _wrapper">
-      <aside class="main__left-aside left-aside">
+    <main class="main _wrapper ">
+      <aside class="main__left-aside left-aside disable">
         <div class="left-aside__wrapper">
           <ul class="left-aside__list">
             <li class="left-aside__item">
@@ -143,7 +145,7 @@
           </button>
         </div>
       </aside>
-      <div class="main__sections">
+      <div class="main__sections disable">
         <section class="main__content">
           <div class="main__wrapper">
             <div class="main__stores stores">
@@ -624,7 +626,7 @@
           </div>
         </section>
       </div>
-      <aside class="main__right-aside right-aside">
+      <aside class="main__right-aside right-aside disable">
         <div class="right-aside__wrapper">
           <div class="right-aside__group group">
             <h2 class="group__main-title">Comunitati</h2>
