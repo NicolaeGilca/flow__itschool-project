@@ -32,18 +32,10 @@
                   src="/images/header/logo.png"
                   alt="logo"
                 />
-                <h1 class="header__logo-title">Flow.</h1>
+                <h1 class="nav__logo-title">Flow.</h1>
               </a>
             </div>
-            <div class="nav__search">
-              <i class="fa-solid fa-magnifying-glass nav__search-button"></i>
-              <input
-                class="nav__search-in"
-                type="text"
-                placeholder="Cauta pe Flow"
-                id="seach"
-              />
-            </div></div>
+         </div>
             
           </div>
           <div class="nav__item branch">
@@ -74,14 +66,18 @@
                 ></a>
               </li>
             </ul>
+          </div>  
+           <div class="nav__search" style="display: none;">
+            <i class="fa-solid fa-magnifying-glass nav__search-button"></i>
+            <input
+              class="nav__search-in"
+              type="text"
+              placeholder="Cauta pe Flow"
+              id="seach"
+            />
           </div>
           <div class="nav__item user">
             <ul class="user__list">
-              <li class="user__item">
-                <button class="user__btn user__btn-menu">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </button>
-              </li>
               <li class="user__item">
                 <button class="user__btn">
                   <i class="fa-solid fa-comment"></i>
@@ -92,7 +88,7 @@
                   <i class="fa-solid fa-bell"></i>
                 </button>
               </li>
-              <li class="user__item">
+              <li class="user__item user__item-profile">
                 <button class="user__btn">
                   <img src="/images/header/ilon_musk.png" alt="btn-img" />
                 </button>
@@ -101,10 +97,29 @@
           </div>
         </nav>
       </div>
+      <!--PROFILE MENU-->
+      <div class="header__profile-element profile-element">
+        <div class="profile-element__close">
+          <div class="profile-element__header">
+            <button class="user__btn">
+              <img src="/images/header/ilon_musk.png" alt="btn-img" />
+            </button>
+            <h3>Ilon Musk</h3>
+          </div>
+          <i class="fa-solid fa-xmark profile-element__close-btn"></i>
+         </div>
+        <div class="profile-element__list">
+          <a href="#" class="profile-element__item profile-element__item-settings"><i class="fa-solid fa-gear"></i>Settings</a>
+          <a href="#" class="profile-element__item profile-element__item-darkmode"><i class="fa-solid fa-moon"></i>Dark Mode</a>
+          <a href="login.html" class=" profile-element__item profile-element__item-logout">
+            <i class="fa-solid fa-right-from-bracket"></i>Log Out
+          </a>
+        </div>
+      </div>
     </header>
 
     <main class="main _wrapper ">
-      <aside class="main__left-aside left-aside disable">
+      <aside class="main__left-aside left-aside ">
         <div class="left-aside__wrapper">
           <ul class="left-aside__list">
             <li class="left-aside__item">
@@ -145,7 +160,7 @@
           </button>
         </div>
       </aside>
-      <div class="main__sections disable">
+      <div class="main__sections ">
         <section class="main__content">
           <div class="main__wrapper">
             <div class="main__stores stores">
@@ -626,7 +641,7 @@
           </div>
         </section>
       </div>
-      <aside class="main__right-aside right-aside disable">
+      <aside class="main__right-aside right-aside ">
         <div class="right-aside__wrapper">
           <div class="right-aside__group group">
             <h2 class="group__main-title">Comunitati</h2>

@@ -44,20 +44,72 @@ i {
   top: 0;
   position: fixed;
   background-color: #fff;
-  z-index: 9;
+  z-index: 3;
 }
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 2.3rem;
+}
+
+.profile-element {
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 20px;
+  background-color: #e7e8ec;
+  border-radius: 5px;
+  z-index: 0;
+  transform: translate(15rem, 0rem);
+  height: 100vh;
+  transition: 0.3s ease-in-out;
+  z-index: 9;
+}
+.profile-element__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: default;
+}
+.profile-element__item {
+  cursor: pointer;
+  padding: 20px 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+.profile-element__item:hover {
+  background-color: silver;
+}
+.profile-element__close {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.profile-element__close i {
+  font-size: 30px;
+  padding: 10px;
+}
+.profile-element__close i:hover {
+  background-color: silver;
+  border-radius: 10px;
+}
+
+.profile-element.active {
+  transform: translate(0rem, 0rem);
 }
 
 .nav__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
 }
 .nav__logo-link {
   display: flex;
@@ -67,6 +119,9 @@ i {
 .nav__logo-link img {
   width: 45px;
   height: 45px;
+}
+.nav__logo-title {
+  font-size: 2rem;
 }
 .nav__wrapper {
   display: flex;
@@ -92,6 +147,9 @@ i {
   padding: 10px 10px 10px 40px;
 }
 
+.branch {
+  width: 40%;
+}
 .branch .active {
   border-bottom: 4px #7431e7 solid;
 }
@@ -134,6 +192,9 @@ i {
   align-items: center;
   gap: 10px;
 }
+.user__item {
+  height: 100%;
+}
 .user__item button {
   cursor: pointer;
 }
@@ -153,7 +214,7 @@ i {
   background-color: rgb(192, 192, 192);
 }
 .user__btn img {
-  width: 100%;
+  min-width: 40px;
   border-radius: 100px;
   object-fit: cover;
 }
@@ -468,6 +529,11 @@ i {
 .friends__img {
   object-fit: contain;
   border-radius: 50px;
+}
+
+.main-login {
+  height: 100vh;
+  background-color: #7431e7;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
