@@ -531,6 +531,75 @@ i {
   border-radius: 50px;
 }
 
+.user-comment {
+  display: none;
+  padding: 20px 0 0 0;
+}
+.user-comment__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+.user-comment__img {
+  border-radius: 50px;
+}
+.user-comment__input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.user-comment__btn {
+  padding: 10px;
+  background-color: #7431e7;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.user-comment__btn i {
+  color: white;
+}
+.user-comment__section {
+  display: flex;
+  flex-direction: column;
+}
+.user-comment__section .comment-styles {
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  background-color: #e7e8ec;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.user-comment.active {
+  display: block;
+}
+
+.user-comment__section li {
+  background-color: #e7e8ec;
+  padding: 10px 10px 20px 10px;
+  font-size: 16px;
+  position: relative;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.user-comment__section li:hover span {
+  transition: 300ms ease-in-out;
+  opacity: 1;
+}
+.user-comment__section span {
+  opacity: 0;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #6d6d6d;
+}
+.user-comment__section span:hover {
+  text-decoration: underline;
+}
+
 .main-login {
   height: 100vh;
   background-color: #7431e7;

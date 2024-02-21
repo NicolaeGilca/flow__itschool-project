@@ -394,7 +394,7 @@
                     <span>52 Likes</span>
                   </div>
                   <div class="user-react__item user-react__item-comment">
-                    <span>26 Comments</span>
+                    <span><strong id="comment-counter" value="26">26</strong> Comments</span>
                   </div>
                 </div>
                 <div class="feed__user-action user-action">
@@ -402,7 +402,7 @@
                     <i class="fa-regular fa-thumbs-up"></i>
                     Like
                   </button>
-                  <button class="user-action__item user-action__item-comment">
+                  <button class="user-action__item user-action__item-comment" id="getComment">
                     <i class="fa-regular fa-comment"></i>
                     Comment
                   </button>
@@ -410,6 +410,14 @@
                     <i class="fa-regular fa-share-from-square"></i>
                     Share
                   </button>
+                </div>
+                <div class="feed__user-comment user-comment">
+                  <div class="user-comment__section" id="commentsSection"></div>
+                  <label class="user-comment__container" for="commentInput">
+                    <img class="user-comment__img" src="/images/header/ilon_musk.png" width="40" height="40" alt="user img">
+                    <input class="user-comment__input" type="text" id="commentInput" placeholder="add comment">
+                    <button class="user-comment__btn" id="addCommentBtn" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                  </label>
                 </div>
               </li>
 
