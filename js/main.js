@@ -52,6 +52,16 @@ const addCommentBtn = document.getElementById("addCommentBtn");
 getCommentInputBtn.addEventListener("click", ()=> {
   document.querySelector(".feed__user-comment").classList.toggle("active");
 });
+//comment counter
+let numOfComments = document.getElementById("comment-counter");
+
+function addCommentCounter() {
+  numOfComments.innerText = Number(numOfComments.innerText) + 1
+}
+function removeCommentCounter() {
+ 
+  numOfComments.innerText = Number(numOfComments.innerText) - 1;
+}
 
 //add comment func
 function commentCreating() {
@@ -79,6 +89,8 @@ commentInput.addEventListener("keydown", (event) => {
   
     commentCreating();
     commentInput.blur()
+addCommentCounter();
+
 }
 });
 //add comment btn
@@ -86,14 +98,20 @@ addCommentBtn.addEventListener("click", () => {
   if(commentInput.value != "") {
     commentCreating();
     commentInput.blur();
+addCommentCounter();
+
   }
 });
 //remove comment
 commentsSection.addEventListener("click",(e)=>{
   if(e.target.tagName === "SPAN"){
     e.target.parentElement.remove();
+    removeCommentCounter()
   }
 })
 
 
-// Comment counter
+// like func
+
+
+
