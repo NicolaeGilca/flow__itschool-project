@@ -42,18 +42,18 @@ let userData = {
   name: "Ilon Musk"
 }
 
-const getCommentInputBtn = document.getElementById("getComment");
-const commentsSection = document.getElementById("commentsSection");
+const getCommentInputBtn = document.querySelector(".getComment");
+const commentsSection = document.querySelector(".commentsSection");
 
-const commentInput = document.getElementById("commentInput");
-const addCommentBtn = document.getElementById("addCommentBtn");
+const commentInput = document.querySelector(".commentInput");
+const addCommentBtn = document.querySelector(".addCommentBtn");
 
 //comment bar
 getCommentInputBtn.addEventListener("click", ()=> {
   document.querySelector(".feed__user-comment").classList.toggle("active");
 });
 //comment counter
-let numOfComments = document.getElementById("comment-counter");
+let numOfComments = document.querySelector(".comment-counter");
 
 function addCommentCounter() {
   numOfComments.innerText = Number(numOfComments.innerText) + 1
@@ -65,7 +65,7 @@ function removeCommentCounter() {
 
 //add comment func
 function commentCreating() {
-  let numOfComment = document.getElementById("comment-counter");
+  let numOfComment = document.querySelector(".comment-counter");
   console.log(numOfComment.value)
 
 
@@ -110,8 +110,23 @@ commentsSection.addEventListener("click",(e)=>{
   }
 })
 
-
 // like func
+const numOfLikes = document.querySelector(".likeCounter");
+const getLikeBtn = document.querySelector(".likeBtn");
+let isLiked = false;
+
+getLikeBtn.addEventListener("click", ()=> {
+  getLikeBtn.classList.toggle("liked");
+  isLiked = !isLiked
+
+
+  numOfLikes.innerText = isLiked
+  ? numOfLikes.innerText = Number(numOfLikes.innerText) + 1
+  : numOfLikes.innerText = Number(numOfLikes.innerText) - 1
+
+})
+
+
 
 
 

@@ -42,10 +42,37 @@
     <main class="main-login">
         <div class="main-login__container _container">
             <div class="main-login__wrapper">
-                <form>
-                    <label for="username">Username</label>
-                    <input type="text" placeholder="enter your user name" id="username">
+                <form class="main-login__form">
+                  <h2 class="main-login__title">Login to your Account</h2>
+                  <div class="main-login__validation-list">
+                    <div class="main-login__validation-item">
+                      <label for="username">Email</label>
+                      <input type="text" placeholder="mail@abc.com" id="username">
+                    </div>
+                    <div class="main-login__validation-item">
+                      <label for="password">Password</label>
+                      <input type="password" placeholder="password" id="password">
+                    </div>
+                  </div>
+                    <div class="main-login__remember">
+                      <div class="main-login__remember-box"> <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">
+                          Remember me
+                        </label>
+                      </div>
+                      
+                      <div class="main-login__forgot-password">
+                        <a href="#" class="main-login__forgot-link">Forgot Password?</a>
+                      </div>
+                    </div>
+                    <input class="main-login__submit" type="submit" value="Log in">
+                    <div class="main-login__register">
+                      <span> Not Registered Yet?</span>
+                      <a href="#" class="main-login__reg-link">Create an account</a>
+                    </div>
                 </form>
+                <a href="index.html" class="main-login__home">Go to your account</a>
+                
             </div>
         </div>
     </main>

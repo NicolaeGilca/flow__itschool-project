@@ -1,8 +1,118 @@
 
-
-.main-login {
-    height: 100vh;
+    .main-login {
         background-color:$purple-color;
+        color: $icon-color;
+        
+
+		&__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+		}
+
+		&__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            
+		}
+
+		&__form {
+            min-width: 500px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+
+            label {
+                font-size: 18px;
+                font-weight: 700;
+                padding-bottom: 5px;
+            }
+            
+		}
+
+		&__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+		}
+
+		&__validation-list {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+		}
+
+		&__validation-item {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            input {
+            min-height: 45px;
+            border-radius: 5px;
+            padding: 0 10px;
+            &:focus {
+                border: 3px solid $purple-color;
+            }
+            }   
+         
+                   
+       
+		}
+
+		&__remember {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           input {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            
+           }
+           
+         
+           
+		}
+        &__forgot-password {
+            color: $purple-color;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+		&__register {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            color: $purple-color;
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+           
+		}
+
+        &__submit {
+            width: 100%;
+            height: 45px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: $purple-color;
+            color: white;
+            font-weight: 700;
+            border: none;
+            margin: 40px 0;
+            font-size: 18px;
+
+        }
+
+       &__home {
+        color: white;
+        text-decoration: underline;
     }
-
-
+}

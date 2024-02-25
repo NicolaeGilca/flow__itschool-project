@@ -429,6 +429,13 @@
       }
     }
   }
+  .liked {
+    background-color: $purple-color;
+    color: white;
+    i {
+      color: white;
+    }
+  }
 }
 
 //left aside section
@@ -633,3 +640,4 @@ border-radius: 5px;
     }
   }
 }
+
