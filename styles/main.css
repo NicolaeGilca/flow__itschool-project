@@ -20,7 +20,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 
@@ -111,6 +110,13 @@ i {
   align-items: center;
   justify-content: space-between;
 }
+.nav__logo-title {
+  font-family: "Monoton", sans-serif;
+  font-size: 2rem;
+}
+.nav__logo-title span {
+  color: #7431e7;
+}
 .nav__logo-link {
   display: flex;
   align-items: center;
@@ -119,9 +125,6 @@ i {
 .nav__logo-link img {
   width: 45px;
   height: 45px;
-}
-.nav__logo-title {
-  font-size: 2rem;
 }
 .nav__wrapper {
   display: flex;
@@ -607,9 +610,25 @@ i {
   text-decoration: underline;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main-login {
   background-color: #7431e7;
   color: #172935;
+  position: relative;
+}
+.main-login .main-login__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Monoton", sans-serif;
+  font-size: 440px;
+  line-height: normal;
+  z-index: 0;
+  color: #172935;
+  margin: 0 auto;
 }
 .main-login__container {
   display: flex;
@@ -618,6 +637,7 @@ i {
   height: 100vh;
 }
 .main-login__wrapper {
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;

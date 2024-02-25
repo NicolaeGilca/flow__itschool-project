@@ -82,8 +82,15 @@
 
   //* first item
 
-
+  &__logo-title {
+    font-family: "Monoton", sans-serif;
+    font-size: 2rem;
+    span {
+      color: $purple-color;
+    }
+  }
   &__logo-link {
+    
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -92,9 +99,7 @@
       width: 45px;
       height: 45px;
     }
-  } &__logo-title {
-    font-size: 2rem;
-  }
+  } 
   &__wrapper {
     display: flex;
      align-items: center;

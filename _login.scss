@@ -1,8 +1,25 @@
 
+    body {
+        overflow-x: hidden;
+    }
+    
     .main-login {
         background-color:$purple-color;
         color: $icon-color;
+        position: relative;
         
+        .main-login__bg {
+           
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-family: "Monoton", sans-serif;
+            font-size: 440px;
+            line-height: normal;
+            z-index: 0;
+            color: $icon-color;
+            margin: 0 auto;
+        }
 
 		&__container {
             display: flex;
@@ -12,6 +29,7 @@
 		}
 
 		&__wrapper {
+            z-index: 1;
             display: flex;
             align-items: center;
             justify-content: center;

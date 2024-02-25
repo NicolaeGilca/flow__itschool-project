@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
       rel="stylesheet"
@@ -22,13 +23,7 @@
             <div class="nav__wrapper">
               <div class="nav__logo">
               <a href="#" class="nav__logo-link">
-                <img
-                  width="53"
-                  height="53"
-                  src="/images/header/logo.png"
-                  alt="logo"
-                />
-                <h1 class="nav__logo-title">Flow.</h1>
+                <h1 class="nav__logo-title">Flow<span>.</span></h1>
               </a>
             </div>
          </div>
@@ -43,15 +38,15 @@
         <div class="main-login__container _container">
             <div class="main-login__wrapper">
                 <form class="main-login__form">
-                  <h2 class="main-login__title">Login to your Account</h2>
+                  <h2 class="main-login__title" id="headerTitle">Login</h2>
                   <div class="main-login__validation-list">
                     <div class="main-login__validation-item">
-                      <label for="username">Email</label>
-                      <input type="text" placeholder="mail@abc.com" id="username">
+                      <label for="userInput">Email</label>
+                      <input type="text" placeholder="mail@abc.com" id="userInput">
                     </div>
                     <div class="main-login__validation-item">
-                      <label for="password">Password</label>
-                      <input type="password" placeholder="password" id="password">
+                      <label for="passwordInput">Password</label>
+                      <input type="password" placeholder="password" id="passwordInput">
                     </div>
                   </div>
                     <div class="main-login__remember">
@@ -62,24 +57,27 @@
                       </div>
                       
                       <div class="main-login__forgot-password">
-                        <a href="#" class="main-login__forgot-link">Forgot Password?</a>
+                        <a href="#" class="main-login__forgot-link" id="forgotPassword">Forgot Password?</a>
                       </div>
                     </div>
-                    <input class="main-login__submit" type="submit" value="Log in">
+                    <input class="main-login__submit" type="submit" value="Log in" id="loginButton">
                     <div class="main-login__register">
                       <span> Not Registered Yet?</span>
-                      <a href="#" class="main-login__reg-link">Create an account</a>
+                      <a href="#" class="main-login__reg-link" id="toggleAuthButton">Create an account</a>
                     </div>
+            <div id="error"></div>
                 </form>
                 <a href="index.html" class="main-login__home">Go to your account</a>
                 
             </div>
         </div>
+        <div class="main-login__bg">flow.</div>
     </main>
     <script
       src="https://kit.fontawesome.com/5a30cfae67.js"
       crossorigin="anonymous"
     ></script>
     <script src="/js/main.js"></script>
+    <script src="/js/login.js"></script>
   </body>
 </html>

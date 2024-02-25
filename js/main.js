@@ -1,20 +1,46 @@
 
-//swirpwe section 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  slidesPerView: 4,
-  spaceBetween: 10,
-  // If we need pagination
-  pagination: {},
+// //swirpwe section 
+// const swiper = new Swiper(".swiper", {
+//   // Optional parameters
+//   direction: "horizontal",
+//   slidesPerView: 4,
+//   spaceBetween: 10,
+//   // If we need pagination
+//   pagination: {},
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {}
+  
 
-  // And if we need scrollbar
+//   // And if we need scrollbar
+// });
+
+var swiper = new Swiper('.swiper', {
+    // Default parameters
+    direction: "horizontal",
+    slidesPerView: 5,
+    spaceBetween: 5,
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is <= 499px
+        499: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 10
+        },
+        // when window width is <= 999px
+        999: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 10
+        }
+    },
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 });
 
 //menu-elements
