@@ -610,6 +610,31 @@ i {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 886px) {
+  .left-aside {
+    display: none;
+  }
+  .main {
+    justify-content: flex-start;
+  }
+  .main__right-aside {
+    width: 35%;
+  }
+  .main__sections {
+    width: 65%;
+  }
+  .right-aside {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main__right-aside {
+    display: none;
+  }
+  .main__sections {
+    width: 100%;
+  }
+}
 body {
   overflow-x: hidden;
 }
